@@ -1,8 +1,27 @@
-Scanning 2 files.
-
-Some files were skipped or only partially analyzed.
-  Scan was limited to files tracked by git.
-  Scan skipped: 2 files matching --exclude patterns
-  For a full list of skipped files, run semgrep with the --verbose flag.
-
-Ran 4 rules on 2 files: 2 findings.
+Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/commands/wrapper.py", line 39, in wrapper
+    func(*args, **kwargs)
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/commands/scan.py", line 881, in scan
+    ) = semgrep.semgrep_main.main(
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/semgrep_main.py", line 268, in main
+    configs_obj, config_errors = get_config(
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/config_resolver.py", line 605, in get_config
+    config, errors = Config.from_config_list(config_strs, project_url)
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/config_resolver.py", line 249, in from_config_list
+    resolved_config = ConfigPath(config, project_url).resolve_config()
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/config_resolver.py", line 125, in resolve_config
+    config = self._load_config_from_local_path()
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/config_resolver.py", line 170, in _load_config_from_local_path
+    config = parse_config_at_path(loc)
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/config_resolver.py", line 430, in parse_config_at_path
+    return parse_config_string(config_id, f.read(), str(loc))
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/config_resolver.py", line 444, in parse_config_string
+    for rule_model in json.loads(contents)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
