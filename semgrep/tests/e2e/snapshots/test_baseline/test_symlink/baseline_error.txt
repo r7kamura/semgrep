@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 Nothing to scan.
   Current version has 0 findings.
 

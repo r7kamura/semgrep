@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 Scanning 1 file.
 
 Some files were skipped or only partially analyzed.

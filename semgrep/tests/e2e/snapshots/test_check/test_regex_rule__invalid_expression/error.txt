@@ -1,1 +1,2 @@
+fatal: No names found, cannot describe anything.
 Scanning 11 files.

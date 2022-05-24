@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 git could not find a single branch-off point, so we will compare the baseline commit directly
 Scanning 3 files.
   Current version has 21 findings.

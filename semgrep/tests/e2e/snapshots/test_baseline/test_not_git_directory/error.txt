@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 Cannot find a commit with reference '12345'. Possible reasons:
 
 - the referenced commit does not exist

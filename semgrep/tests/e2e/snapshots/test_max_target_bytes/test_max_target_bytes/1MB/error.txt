@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 
 Scanning across multiple languages:
     python | 3 rules × 11 files

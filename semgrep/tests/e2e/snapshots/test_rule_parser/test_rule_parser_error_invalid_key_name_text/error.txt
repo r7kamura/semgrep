@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 [31m[22m[24mInvalid YAML file rules/syntax/invalid-patterns-key.yml:
 	while parsing a block mapping
 	  in "<file>", line 4, column 7

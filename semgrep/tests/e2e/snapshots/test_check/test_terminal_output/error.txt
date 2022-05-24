@@ -1,3 +1,4 @@
+fatal: No names found, cannot describe anything.
 [33m[22m[24mMETRICS: Using configs from the Registry (like --config=p/ci) reports pseudonymous rule metrics to semgrep.dev.
 To disable Registry rule metrics, use "--metrics=off".
 Using configs only from local files (like --config=xyz.yml) does not enable metrics.

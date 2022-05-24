@@ -1,1 +1,2 @@
+fatal: No names found, cannot describe anything.
 --dump-ast and -l/--lang must both be specified
