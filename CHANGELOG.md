@@ -4,9 +4,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+### Changed
+
+- Made error message for resource exhausion (exit code -11/-9) more actionable
+
+## [0.92.1](https://github.com/returntocorp/semgrep/releases/tag/v0.92.1) - 2022-05-13
+
 ### Added
 
 - `r2c-internal-project-depends-on`: support for Gradle and Poetry lockfiles
+- `shouldafound`: False Negative reporting via the CLI.
 
 ### Changed
 
@@ -28,6 +35,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
   the taint engine will handle this as expected and it will not suffer from such
   limitation. We believe that this change should not break existing taint rules,
   but please report any regressions that you may find.
+- Processing large rule files is now 30% faster.
 - The dot access ellipsis now matches field accesses in addition to method
   calls.
 - Made error message for resource exhausion (exit code -11/-9) more actionable
