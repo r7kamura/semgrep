@@ -1,9 +1,9 @@
 {
   "environment": {
     "ci": null,
-    "configNamesHash": "4a34b75810eab9dcfb56fa43b7b25391b28ac07a285dca56d979a9e0111ab23a",
+    "configNamesHash": "909b05f3b1444dd7617edb891a805532a053a3159c9aa84e9c5289cfaa09f4af",
     "isAuthenticated": false,
-    "projectHash": "c26d8842e4e91153327987e1ec630cb08ca9b6320a9c0c1290626c5ad659f14e",
+    "projectHash": "42740465f2cf1af79910311e2534ad471a94e4bb9d33fce9b9bdbc1806e87d21",
     "rulesHash": "a501bbc393322a2b45518dc554d25894c0a4babdfd2860f820e6758b8f1ba4c0",
     "version": "x.x.x"
   },
@@ -53,8 +53,8 @@
     ],
     "totalBytesScanned": 6
   },
-  "sent_at": "2017-03-03T00:00:00-08:00",
-  "started_at": "2017-03-03T00:00:00-08:00",
+  "sent_at": "2017-03-03T00:00:00+00:00",
+  "started_at": "2017-03-03T00:00:00+00:00",
   "value": {
     "numFindings": 1,
     "numIgnored": 0,
