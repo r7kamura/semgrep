@@ -11,11 +11,11 @@
       "check_id": "eqeq-bad",
       "end": {
         "col": 11,
-        "line": 4,
-        "offset": 43
+        "line": 7,
+        "offset": 89
       },
       "extra": {
-        "fingerprint": "8c695a6a4ab5ffff33d0103309a310c1",
+        "fingerprint": "f6c666e6921a44028a2015d0de15cc14",
         "is_ignored": false,
         "lines": "    a == a",
         "message": "useless comparison",
@@ -25,13 +25,13 @@
             "abstract_content": "a",
             "end": {
               "col": 6,
-              "line": 4,
-              "offset": 38
+              "line": 7,
+              "offset": 84
             },
             "start": {
               "col": 5,
-              "line": 4,
-              "offset": 37
+              "line": 7,
+              "offset": 83
             },
             "unique_id": {
               "md5sum": "<masked in tests>",
@@ -44,8 +44,8 @@
       "path": "foo.py",
       "start": {
         "col": 5,
-        "line": 4,
-        "offset": 37
+        "line": 7,
+        "offset": 83
       }
     },
     {
@@ -93,11 +93,11 @@
       "check_id": "eqeq-bad",
       "end": {
         "col": 11,
-        "line": 7,
-        "offset": 89
+        "line": 4,
+        "offset": 43
       },
       "extra": {
-        "fingerprint": "f6c666e6921a44028a2015d0de15cc14",
+        "fingerprint": "8c695a6a4ab5ffff33d0103309a310c1",
         "is_ignored": false,
         "lines": "    a == a",
         "message": "useless comparison",
@@ -107,13 +107,13 @@
             "abstract_content": "a",
             "end": {
               "col": 6,
-              "line": 7,
-              "offset": 84
+              "line": 4,
+              "offset": 38
             },
             "start": {
               "col": 5,
-              "line": 7,
-              "offset": 83
+              "line": 4,
+              "offset": 37
             },
             "unique_id": {
               "md5sum": "<masked in tests>",
@@ -126,8 +126,8 @@
       "path": "foo.py",
       "start": {
         "col": 5,
-        "line": 7,
-        "offset": 83
+        "line": 4,
+        "offset": 37
       }
     },
     {

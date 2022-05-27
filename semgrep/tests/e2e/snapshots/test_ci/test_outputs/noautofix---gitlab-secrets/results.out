@@ -10,7 +10,7 @@
       },
       "confidence": "High",
       "cve": "foo.py:b08fd7a517303ab07cfa211f74d03c1a4c2e64b3b0656d84ff32ecb449b785d2:eqeq-bad",
-      "id": "8c695a6a-4ab5-ffff-33d0-103309a310c1",
+      "id": "f6c666e6-921a-4402-8a20-15d0de15cc14",
       "identifiers": [
         {
           "name": "Semgrep - eqeq-bad",
@@ -23,9 +23,9 @@
         "dependency": {
           "package": {}
         },
-        "end_line": 4,
+        "end_line": 7,
         "file": "foo.py",
-        "start_line": 4
+        "start_line": 7
       },
       "message": "useless comparison",
       "raw_source_code_extract": [
@@ -86,7 +86,7 @@
       },
       "confidence": "High",
       "cve": "foo.py:b08fd7a517303ab07cfa211f74d03c1a4c2e64b3b0656d84ff32ecb449b785d2:eqeq-bad",
-      "id": "f6c666e6-921a-4402-8a20-15d0de15cc14",
+      "id": "8c695a6a-4ab5-ffff-33d0-103309a310c1",
       "identifiers": [
         {
           "name": "Semgrep - eqeq-bad",
@@ -99,9 +99,9 @@
         "dependency": {
           "package": {}
         },
-        "end_line": 7,
+        "end_line": 4,
         "file": "foo.py",
-        "start_line": 7
+        "start_line": 4
       },
       "message": "useless comparison",
       "raw_source_code_extract": [

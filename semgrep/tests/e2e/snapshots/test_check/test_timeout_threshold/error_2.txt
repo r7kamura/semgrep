@@ -5,8 +5,6 @@ Rules:
 - rules.forcetimeout2
 - rules.forcetimeout3
 Scanning 1 file with 3 python rules.
-[31m[22m[24mWarning: 1 timeout error(s) in targets/equivalence/open_redirect.py when running the following rules:
-[rules.forcetimeout2][0m
 
 ========================================
 Files skipped:
@@ -42,12 +40,11 @@ Files skipped:
 
   [1m[24mSkipped by analysis failure due to parsing or internal Semgrep error[0m
 
-   • [36m[22m[24mtargets/equivalence/open_redirect.py[0m
+   • <none>
 
 
 Some files were skipped or only partially analyzed.
   Scan was limited to files tracked by git.
-  Partially scanned: 1 files only partially analyzed due to a parsing or internal Semgrep error
 
 Ran 3 rules on 1 file: 0 findings.
 Not sending pseudonymous metrics since metrics are configured to AUTO and server usage is False

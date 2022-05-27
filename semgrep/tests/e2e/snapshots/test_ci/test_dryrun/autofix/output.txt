@@ -13,11 +13,11 @@ Findings:
      eqeq-bad
         useless comparison
 
-          4┆ a == a
+          7┆ a == a
           ⋮┆----------------------------------------
           5┆ a == a
           ⋮┆----------------------------------------
-          7┆ a == a
+          4┆ a == a
           ⋮┆----------------------------------------
          11┆ y == y
           ⋮┆----------------------------------------
@@ -46,15 +46,15 @@ Would have sent findings blob: {
         {
             "check_id": "eqeq-bad",
             "path": "foo.py",
-            "line": 4,
+            "line": 7,
             "column": 5,
-            "end_line": 4,
+            "end_line": 7,
             "end_column": 11,
             "message": "useless comparison",
             "severity": 2,
-            "index": 0,
+            "index": 3,
             "commit_date": <sanitized date>,
-            "syntactic_id": "8c695a6a4ab5ffff33d0103309a310c1",
+            "syntactic_id": "f6c666e6921a44028a2015d0de15cc14",
             "metadata": {},
             "is_blocking": true
         },
@@ -76,15 +76,15 @@ Would have sent findings blob: {
         {
             "check_id": "eqeq-bad",
             "path": "foo.py",
-            "line": 7,
+            "line": 4,
             "column": 5,
-            "end_line": 7,
+            "end_line": 4,
             "end_column": 11,
             "message": "useless comparison",
             "severity": 2,
-            "index": 3,
+            "index": 0,
             "commit_date": <sanitized date>,
-            "syntactic_id": "f6c666e6921a44028a2015d0de15cc14",
+            "syntactic_id": "8c695a6a4ab5ffff33d0103309a310c1",
             "metadata": {},
             "is_blocking": true
         },
@@ -101,6 +101,25 @@ Would have sent findings blob: {
             "commit_date": <sanitized date>,
             "syntactic_id": "d44049421636e370e7906a6bed5fce54",
             "metadata": {},
+            "is_blocking": true
+        },
+        {
+            "check_id": "eqeq-four",
+            "path": "foo.py",
+            "line": 19,
+            "column": 5,
+            "end_line": 19,
+            "end_column": 13,
+            "message": "useless comparison to 4",
+            "severity": 2,
+            "index": 1,
+            "commit_date": <sanitized date>,
+            "syntactic_id": "87cd1247dfc84bbd502c872035c71a63",
+            "metadata": {
+                "dev.semgrep.actions": [
+                    "block"
+                ]
+            },
             "is_blocking": true
         },
         {
@@ -122,25 +141,6 @@ Would have sent findings blob: {
             "fixed_lines": [
                 "    x == 2"
             ]
-        },
-        {
-            "check_id": "eqeq-four",
-            "path": "foo.py",
-            "line": 19,
-            "column": 5,
-            "end_line": 19,
-            "end_column": 13,
-            "message": "useless comparison to 4",
-            "severity": 2,
-            "index": 1,
-            "commit_date": <sanitized date>,
-            "syntactic_id": "87cd1247dfc84bbd502c872035c71a63",
-            "metadata": {
-                "dev.semgrep.actions": [
-                    "block"
-                ]
-            },
-            "is_blocking": true
         },
         {
             "check_id": "__r2c-internal-cai_eqeq",
@@ -175,15 +175,15 @@ Would have sent ignores blob: {
         {
             "check_id": "eqeq-bad",
             "path": "foo.py",
-            "line": 6,
+            "line": 13,
             "column": 5,
-            "end_line": 6,
+            "end_line": 13,
             "end_column": 11,
             "message": "useless comparison",
             "severity": 2,
-            "index": 2,
+            "index": 0,
             "commit_date": <sanitized date>,
-            "syntactic_id": "c2d65932166aec2a4a96ff0e8deebd97",
+            "syntactic_id": "0db994486d207a88b9e7bc0475d8a14a",
             "metadata": {},
             "is_blocking": true
         },
@@ -205,16 +205,35 @@ Would have sent ignores blob: {
         {
             "check_id": "eqeq-bad",
             "path": "foo.py",
-            "line": 13,
+            "line": 6,
             "column": 5,
-            "end_line": 13,
+            "end_line": 6,
             "end_column": 11,
             "message": "useless comparison",
             "severity": 2,
+            "index": 2,
+            "commit_date": <sanitized date>,
+            "syntactic_id": "c2d65932166aec2a4a96ff0e8deebd97",
+            "metadata": {},
+            "is_blocking": true
+        },
+        {
+            "check_id": "eqeq-four",
+            "path": "foo.py",
+            "line": 18,
+            "column": 5,
+            "end_line": 18,
+            "end_column": 13,
+            "message": "useless comparison to 4",
+            "severity": 2,
             "index": 0,
             "commit_date": <sanitized date>,
-            "syntactic_id": "0db994486d207a88b9e7bc0475d8a14a",
-            "metadata": {},
+            "syntactic_id": "0c6353c9e29a6595b15fe4f554cd4134",
+            "metadata": {
+                "dev.semgrep.actions": [
+                    "block"
+                ]
+            },
             "is_blocking": true
         },
         {
@@ -236,25 +255,6 @@ Would have sent ignores blob: {
             "fixed_lines": [
                 "    y == 2  # nosemgrep"
             ]
-        },
-        {
-            "check_id": "eqeq-four",
-            "path": "foo.py",
-            "line": 18,
-            "column": 5,
-            "end_line": 18,
-            "end_column": 13,
-            "message": "useless comparison to 4",
-            "severity": 2,
-            "index": 0,
-            "commit_date": <sanitized date>,
-            "syntactic_id": "0c6353c9e29a6595b15fe4f554cd4134",
-            "metadata": {
-                "dev.semgrep.actions": [
-                    "block"
-                ]
-            },
-            "is_blocking": true
         }
     ]
 }

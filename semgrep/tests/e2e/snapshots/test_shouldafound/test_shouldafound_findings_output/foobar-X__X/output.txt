@@ -3,9 +3,9 @@ Scanning 49 files.
 Findings:
 
   targets/basic/stupid.py 
-          3┆ return a + b == a + b
-          ⋮┆----------------------------------------
           8┆ x == x
+          ⋮┆----------------------------------------
+          3┆ return a + b == a + b
           ⋮┆----------------------------------------
          12┆ assertTrue(x == x)
 
@@ -13,9 +13,9 @@ Findings:
   targets/ci/foo.py 
           4┆ a == a
           ⋮┆----------------------------------------
-          5┆ a == a
-          ⋮┆----------------------------------------
           7┆ a == a
+          ⋮┆----------------------------------------
+          5┆ a == a
           ⋮┆----------------------------------------
          11┆ y == y
 
@@ -52,6 +52,5 @@ Findings:
 
 Some files were skipped or only partially analyzed.
   Scan was limited to files tracked by git.
-  Partially scanned: 1 files only partially analyzed due to a parsing or internal Semgrep error
 
 Ran 1 rule on 49 files: 15 findings.

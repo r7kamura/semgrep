@@ -10,14 +10,14 @@
           "replacements": [
             {
               "deletedRegion": {
-                "endColumn": 12,
-                "endLine": 5,
-                "startColumn": 3,
-                "startLine": 5
+                "endColumn": 19,
+                "endLine": 6,
+                "startColumn": 6,
+                "startLine": 6
               },
               "insertedContent": {
                 "text": [
-                  "  inputs.get(x) = 1"
+                  "  if inputs.get(x + 1) == True:"
                 ]
               }
             }
@@ -37,14 +37,14 @@
           "replacements": [
             {
               "deletedRegion": {
-                "endColumn": 19,
-                "endLine": 6,
-                "startColumn": 6,
-                "startLine": 6
+                "endColumn": 12,
+                "endLine": 5,
+                "startColumn": 3,
+                "startLine": 5
               },
               "insertedContent": {
                 "text": [
-                  "  if inputs.get(x + 1) == True:"
+                  "  inputs.get(x) = 1"
                 ]
               }
             }
@@ -74,13 +74,13 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "endColumn": 12,
-                  "endLine": 5,
+                  "endColumn": 19,
+                  "endLine": 6,
                   "snippet": {
-                    "text": "  inputs[x] = 1"
+                    "text": "  if inputs[x + 1] == True:"
                   },
-                  "startColumn": 3,
-                  "startLine": 5
+                  "startColumn": 6,
+                  "startLine": 6
                 }
               }
             }
@@ -99,13 +99,13 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "endColumn": 19,
-                  "endLine": 6,
+                  "endColumn": 12,
+                  "endLine": 5,
                   "snippet": {
-                    "text": "  if inputs[x + 1] == True:"
+                    "text": "  inputs[x] = 1"
                   },
-                  "startColumn": 6,
-                  "startLine": 6
+                  "startColumn": 3,
+                  "startLine": 5
                 }
               }
             }

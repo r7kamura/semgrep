@@ -5,15 +5,15 @@
         {
             "check_id": "eqeq-bad",
             "path": "foo.py",
-            "line": 4,
+            "line": 7,
             "column": 5,
-            "end_line": 4,
+            "end_line": 7,
             "end_column": 11,
             "message": "useless comparison",
             "severity": 2,
-            "index": 0,
+            "index": 3,
             "commit_date": "sanitized",
-            "syntactic_id": "8c695a6a4ab5ffff33d0103309a310c1",
+            "syntactic_id": "f6c666e6921a44028a2015d0de15cc14",
             "metadata": {},
             "is_blocking": true
         },
@@ -35,15 +35,15 @@
         {
             "check_id": "eqeq-bad",
             "path": "foo.py",
-            "line": 7,
+            "line": 4,
             "column": 5,
-            "end_line": 7,
+            "end_line": 4,
             "end_column": 11,
             "message": "useless comparison",
             "severity": 2,
-            "index": 3,
+            "index": 0,
             "commit_date": "sanitized",
-            "syntactic_id": "f6c666e6921a44028a2015d0de15cc14",
+            "syntactic_id": "8c695a6a4ab5ffff33d0103309a310c1",
             "metadata": {},
             "is_blocking": true
         },
@@ -63,23 +63,6 @@
             "is_blocking": true
         },
         {
-            "check_id": "eqeq-five",
-            "path": "foo.py",
-            "line": 15,
-            "column": 5,
-            "end_line": 15,
-            "end_column": 11,
-            "message": "useless comparison to 5",
-            "severity": 2,
-            "index": 0,
-            "commit_date": "sanitized",
-            "syntactic_id": "8646a2dfc020913606969dcfe84e53c0",
-            "metadata": {
-                "dev.semgrep.actions": []
-            },
-            "is_blocking": false
-        },
-        {
             "check_id": "eqeq-four",
             "path": "foo.py",
             "line": 19,
@@ -97,6 +80,23 @@
                 ]
             },
             "is_blocking": true
+        },
+        {
+            "check_id": "eqeq-five",
+            "path": "foo.py",
+            "line": 15,
+            "column": 5,
+            "end_line": 15,
+            "end_column": 11,
+            "message": "useless comparison to 5",
+            "severity": 2,
+            "index": 0,
+            "commit_date": "sanitized",
+            "syntactic_id": "8646a2dfc020913606969dcfe84e53c0",
+            "metadata": {
+                "dev.semgrep.actions": []
+            },
+            "is_blocking": false
         },
         {
             "check_id": "__r2c-internal-cai_eqeq",
