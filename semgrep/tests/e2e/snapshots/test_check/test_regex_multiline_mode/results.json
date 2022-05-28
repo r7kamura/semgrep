@@ -8,14 +8,14 @@
   },
   "results": [
     {
-      "check_id": "rules.test-regex",
+      "check_id": "rules.test-regex-multiline-mode",
       "end": {
         "col": 6,
         "line": 4,
         "offset": 44
       },
       "extra": {
-        "fingerprint": "9afae1627d3ad1e70092c981a56668a1",
+        "fingerprint": "0a704c999bbce32e79537f3f38a61feb",
         "is_ignored": false,
         "lines": "hello",
         "message": "This rule matches the word 'hello' alone on a line.",
