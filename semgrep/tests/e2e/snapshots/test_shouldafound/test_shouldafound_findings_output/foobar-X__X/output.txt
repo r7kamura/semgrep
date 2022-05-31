@@ -1,4 +1,4 @@
-Scanning 50 files.
+Scanning 51 files.
 
 Findings:
 
@@ -38,6 +38,12 @@ Findings:
           2┆ print(1 == 1)
 
 
+  targets/message_interpolation/propagated_constant.py 
+          4┆ return x == 0
+          ⋮┆----------------------------------------
+          7┆ return 0 == 0
+
+
   targets/multiline/stupid.py 
           7┆ SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK
           8┆ == SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK
@@ -54,4 +60,4 @@ Some files were skipped or only partially analyzed.
   Scan was limited to files tracked by git.
   Partially scanned: 1 files only partially analyzed due to a parsing or internal Semgrep error
 
-Ran 1 rule on 50 files: 15 findings.
+Ran 1 rule on 51 files: 17 findings.
