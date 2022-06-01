@@ -6,7 +6,6 @@ from click.testing import CliRunner
 
 from semgrep.cli import cli
 from semgrep.commands import shouldafound
-from semgrep.constants import SEMGREP_SETTING_ENVVAR_NAME
 from semgrep.error import SemgrepError
 
 FILE_CONTENT = dedent(
@@ -71,7 +70,7 @@ def test_read_args(tmp_path, mocker):
     mocker.patch.object(shouldafound, "_make_shouldafound_request", request_mock)
     runner = CliRunner(
         env={
-            SEMGREP_SETTING_ENVVAR_NAME: str(tmp_path),
+            "SEMGREP_SETTINGS_FILE": str(tmp_path),
         }
     )
     result = runner.invoke(
@@ -108,7 +107,7 @@ def test_read_line_args(tmp_path, mocker):
     mocker.patch.object(shouldafound, "_make_shouldafound_request", request_mock)
     runner = CliRunner(
         env={
-            SEMGREP_SETTING_ENVVAR_NAME: str(tmp_path),
+            "SEMGREP_SETTINGS_FILE": str(tmp_path),
         }
     )
     result = runner.invoke(
@@ -138,7 +137,7 @@ def test_read_line_args(tmp_path, mocker):
 @pytest.mark.quick
 def test_handle_api_error(tmp_path, mocker):
 
-    runner = CliRunner(env={SEMGREP_SETTING_ENVVAR_NAME: str(tmp_path)})
+    runner = CliRunner(env={"SEMGREP_SETTINGS_FILE": str(tmp_path)})
 
     mocker.patch.object(Path, "open", mocker.mock_open(read_data=FILE_CONTENT))
 
