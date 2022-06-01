@@ -10,7 +10,6 @@ from click.testing import CliRunner
 from semgrep.cli import cli
 from semgrep.commands import scan
 from semgrep.commands import shouldafound
-from semgrep.constants import SEMGREP_SETTING_ENVVAR_NAME
 
 # Point to the root of the tests dir
 TESTS_PATH = Path(__file__).parent.parent
@@ -23,7 +22,7 @@ def test_shouldafound_no_args(tmp_path, snapshot):
     """
     runner = CliRunner(
         env={
-            SEMGREP_SETTING_ENVVAR_NAME: str(tmp_path),
+            "SEMGREP_SETTINGS_FILE": str(tmp_path),
         }
     )
     result = runner.invoke(cli, ["shouldafound"])
@@ -60,7 +59,7 @@ def test_shouldafound_no_confirmation(
     """
     runner = CliRunner(
         env={
-            SEMGREP_SETTING_ENVVAR_NAME: str(tmp_path),
+            "SEMGREP_SETTINGS_FILE": str(tmp_path),
         }
     )
 
@@ -145,7 +144,7 @@ def test_shouldafound_findings_output(
 
     runner = CliRunner(
         env={
-            SEMGREP_SETTING_ENVVAR_NAME: str(tmp_path),
+            "SEMGREP_SETTINGS_FILE": str(tmp_path),
         }
     )
 
