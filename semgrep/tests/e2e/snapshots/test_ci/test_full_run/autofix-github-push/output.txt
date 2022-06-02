@@ -6,6 +6,7 @@ Scan environment:
 Fetching configuration from semgrep.dev
 Adding ignore patterns configured on semgrep.dev as `--exclude` options: ()
 Fetching rules from https://semgrep.dev/registry.
+Error in add_registry_url: too many values to unpack (expected 2)
 Scanning 1 file with 4 python rules.
 
 Findings:
