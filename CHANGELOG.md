@@ -44,6 +44,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 - Scala: correctly handle `return` for taint analysis (#4975)
 - PHP: correctly handle namespace use declarations when they don't rename
   the imported name (#3964)
+- Scala: stop parsing parenthesized expressions as unary tuples
 - Constant propagation is now faster and memory efficient when analyzing
   large functions with lots of variables.
 
