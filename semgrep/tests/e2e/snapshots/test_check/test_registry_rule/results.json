@@ -23,22 +23,20 @@
   },
   "results": [
     {
-      "check_id": "javascript.lang.correctness.useless-eqeq.eqeq-is-bad",
+      "check_id": "eqeq-is-bad",
       "end": {
         "col": 19,
         "line": 3,
         "offset": 67
       },
       "extra": {
-        "fingerprint": "d2f7a218c01c0da875d98a9fa419d465",
+        "fingerprint": "89cb6a21c4d71966d0e11f1a2bd7c84b",
         "is_ignored": false,
         "lines": "console.log(x == x)",
         "message": "Detected a useless comparison operation `x == x` or `x != x`. This operation is always true. If testing for floating point NaN, use `math.isnan`, or `cmath.isnan` if the number is complex.",
         "metadata": {
           "category": "correctness",
           "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
-          "shortlink": "https://sg.run/Kl6n",
-          "source": "https://semgrep.dev/r/javascript.lang.correctness.useless-eqeq.eqeq-is-bad",
           "technology": [
             "javascript"
           ]
@@ -72,22 +70,20 @@
       }
     },
     {
-      "check_id": "python.lang.correctness.useless-eqeq.useless-eqeq",
+      "check_id": "useless-eqeq",
       "end": {
         "col": 26,
         "line": 3,
         "offset": 69
       },
       "extra": {
-        "fingerprint": "1baec25f6b19a8b99027bf265d1219dd",
+        "fingerprint": "e73cd328844e9a45617812701019425e",
         "is_ignored": false,
         "lines": "    return a + b == a + b",
         "message": "This expression is always True: `a + b == a + b` or `a + b != a + b`. If testing for floating point NaN, use `math.isnan(a + b)`, or `cmath.isnan(a + b)` if the number is complex.",
         "metadata": {
           "category": "correctness",
           "license": "Commons Clause License Condition v1.0[LGPL-2.1-only]",
-          "shortlink": "https://sg.run/GeAp",
-          "source": "https://semgrep.dev/r/python.lang.correctness.useless-eqeq.useless-eqeq",
           "technology": [
             "python"
           ]
