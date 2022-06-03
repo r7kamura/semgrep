@@ -1,5 +1,5 @@
-Scanning 1 file.
-  Current version has 9 findings.
+Scanning 2 files.
+  Current version has 10 findings.
 
 Switching repository to baseline commit 'baz'.
   Will report findings introduced by these commits:
@@ -31,9 +31,9 @@ Switching repository to baseline commit 'baz'.
   To avoid reporting such findings, compare to the branch-off point with:
     --baseline-commit=$(git merge-base baz HEAD)
 
-Scanning 1 file.
+Scanning 2 files.
 
 Some files were skipped or only partially analyzed.
   Scan was limited to files changed since baseline commit.
 
-Ran 1 rule on 1 file: 2 findings.
+Ran 1 rule on 2 files: 2 findings.
