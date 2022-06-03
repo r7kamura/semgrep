@@ -54,22 +54,22 @@ class BaselineHandler:
     base_commit: Git ref to compare against
     """
 
-    def __init__(self, base_commit: str) -> None:
+    def __init__(self, baseline_commit_ref: str) -> None:
         """
         Raises Exception if
         - cwd is not in git repo
-        - base_commit is not valid git hash
+        - baseline_commit_ref is not valid git hash
         - there are tracked files with pending changes
         - there are untracked files that will be overwritten by a file in the base commit
         """
-        self._base_commit = base_commit
+        self._baseline_commit_ref = baseline_commit_ref
         self._dirty_paths_by_status: Optional[Dict[str, List[Path]]] = None
 
         try:
             # Check commit hash exists
             try:
                 subprocess.run(
-                    ["git", "cat-file", "-e", base_commit],
+                    ["git", "cat-file", "-e", baseline_commit_ref],
                     check=True,
                     capture_output=True,
                 )
@@ -77,13 +77,13 @@ class BaselineHandler:
                 raise Exception(
                     dedent(
                         f"""
-                        Cannot find a commit with reference '{base_commit}'. Possible reasons:
+                        Cannot find a commit with reference '{baseline_commit_ref}'. Possible reasons:
 
                         - the referenced commit does not exist
                         - the current working directory is not a git repository
                         - the git binary is not available
 
-                        Try running `git show {base_commit}` to debug the issue.
+                        Try running `git show {baseline_commit_ref}` to debug the issue.
                         """
                     ).strip()
                 )
@@ -121,33 +121,18 @@ class BaselineHandler:
             "--diff-filter=ACDMRTUXB",
             "--ignore-submodules",
             "--relative",
-            self._base_commit,
+            self._baseline_commit_ref,
         ]
-        try:
-            # nosemgrep: python.lang.security.audit.dangerous-subprocess-use.dangerous-subprocess-use
-            raw_output = subprocess.run(
-                [*status_cmd, "--merge-base"],
-                timeout=GIT_SH_TIMEOUT,
-                capture_output=True,
-                encoding="utf-8",
-                check=True,
-            ).stdout
 
-        except subprocess.CalledProcessError as exc:
-            if exc.stderr.strip() == "fatal: multiple merge bases found":
-                logger.warn(
-                    "git could not find a single branch-off point, so we will compare the baseline commit directly"
-                )
-                # nosemgrep: python.lang.security.audit.dangerous-subprocess-use.dangerous-subprocess-use
-                raw_output = subprocess.run(
-                    status_cmd,
-                    timeout=GIT_SH_TIMEOUT,
-                    capture_output=True,
-                    encoding="utf-8",
-                    check=True,
-                ).stdout
-            else:
-                raise exc
+        # nosemgrep: python.lang.security.audit.dangerous-subprocess-use.dangerous-subprocess-use
+        raw_output = subprocess.run(
+            status_cmd,
+            timeout=GIT_SH_TIMEOUT,
+            capture_output=True,
+            encoding="utf-8",
+            check=True,
+        ).stdout
+
         status_output = zsplit(raw_output)
         logger.debug("Finished git diff. Parsing git status output")
         logger.debug(status_output)
@@ -271,7 +256,7 @@ class BaselineHandler:
 
         if overlapping_paths:
             raise Exception(
-                f"Found files that are untracked by git but exist in {self._base_commit}",
+                f"Found files that are untracked by git but exist in {self._baseline_commit_ref}",
                 "Running a baseline scan will cause changes to be overwritten, so aborting.",
                 f"Please commit or stash your untracked changes in these paths: {overlapping_paths}.",
             )
@@ -307,15 +292,9 @@ class BaselineHandler:
             check=True,
         ).stdout.strip()
         try:
-            merge_base_sha = (
-                sub_check_output(["git", "merge-base", self._base_commit, "HEAD"])
-                .rstrip()
-                .decode()
-            )
-
             logger.debug("Running git checkout for baseline context")
             subprocess.run(
-                ["git", "reset", "--hard", merge_base_sha],
+                ["git", "reset", "--hard", self._baseline_commit_ref],
                 timeout=GIT_SH_TIMEOUT,
                 capture_output=True,
                 check=True,
@@ -355,10 +334,12 @@ class BaselineHandler:
 
     def print_git_log(self) -> None:
         base_commit_sha = (
-            sub_check_output(["git", "rev-parse", self._base_commit]).rstrip().decode()
+            sub_check_output(["git", "rev-parse", self._baseline_commit_ref])
+            .rstrip()
+            .decode()
         )
         merge_base_sha = (
-            sub_check_output(["git", "merge-base", self._base_commit, "HEAD"])
+            sub_check_output(["git", "merge-base", self._baseline_commit_ref, "HEAD"])
             .rstrip()
             .decode()
         )
@@ -391,5 +372,5 @@ class BaselineHandler:
             )
             logger.info(
                 "  To avoid reporting such findings, compare to the branch-off point with:\n"
-                f"    --baseline-commit=$(git merge-base {self._base_commit} HEAD)"
+                f"    --baseline-commit=$(git merge-base {self._baseline_commit_ref} HEAD)"
             )
