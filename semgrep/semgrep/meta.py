@@ -72,7 +72,7 @@ class GitMeta:
         ).strip()
 
     @cachedproperty
-    def base_commit_ref(self) -> Optional[str]:
+    def merge_base_ref(self) -> Optional[str]:
         return self.cli_baseline_ref
 
     @property
@@ -157,7 +157,7 @@ class GitMeta:
             "pull_request_id": self.pr_id,
             "pull_request_title": self.pr_title,
             "scan_environment": self.environment,
-            "is_full_scan": self.base_commit_ref == None,
+            "is_full_scan": self.merge_base_ref == None,
         }
 
 
@@ -314,7 +314,7 @@ class GithubMeta(GitMeta):
             return process.stdout.strip()
 
     @cachedproperty
-    def base_commit_ref(self) -> Optional[str]:
+    def merge_base_ref(self) -> Optional[str]:
         if self.cli_baseline_ref:
             return self.cli_baseline_ref
         if self.is_pull_request_event and self.head_ref is not None:
@@ -435,7 +435,7 @@ class GitlabMeta(GitMeta):
         return os.getenv("CI_COMMIT_REF_NAME")
 
     @cachedproperty
-    def base_commit_ref(self) -> Optional[str]:
+    def merge_base_ref(self) -> Optional[str]:
         if self.cli_baseline_ref:
             return self.cli_baseline_ref
         target_branch = os.getenv("CI_MERGE_REQUEST_TARGET_BRANCH_NAME")
@@ -476,7 +476,7 @@ class GitlabMeta(GitMeta):
         return {
             **super().to_dict(),
             "branch": self.commit_ref,
-            "base_sha": self.base_commit_ref,
+            "base_sha": self.merge_base_ref,
             "start_sha": self.start_sha,
         }
 
