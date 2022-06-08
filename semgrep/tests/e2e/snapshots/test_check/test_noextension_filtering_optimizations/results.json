@@ -15,7 +15,7 @@
         "offset": 69
       },
       "extra": {
-        "fingerprint": "53303da989bf0423105dd1ef998e8f48",
+        "fingerprint": "ef4ca429f91b45aeec5084ccd9c47ab87c3f042fba2d6dcbb0b7f2ea205d53322ea75cfb82a2c4dc81f77f392bcb3ff24406cbbda4f7a981cca1e66af50c1188_0",
         "is_ignored": false,
         "lines": "    return a + b == a + b",
         "message": "useless comparison operation `a + b == a + b` or `a + b != a + b`; possible bug?",

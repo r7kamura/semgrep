@@ -15,7 +15,7 @@
         "offset": 241
       },
       "extra": {
-        "fingerprint": "3cdafb4e4372b5bd092f5c3381078620",
+        "fingerprint": "baf519ff732a0d0b8afac1c136d3d0361fa61e4dd119491bb16632ecb6db4d9eb55e43f1055a1574d15bd5b2c02bf8031fcc2e1aa7f2dbb93dd81ce72b6a290c_0",
         "is_ignored": false,
         "lines": "    allowed_origins = [\"*\"]",
         "message": "CORS rule on bucket permits any origin",

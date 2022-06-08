@@ -15,7 +15,7 @@
         "offset": 44
       },
       "extra": {
-        "fingerprint": "887156053c6fb347744c70a2a91de80b",
+        "fingerprint": "d9b17602339f0faebf010b646cffef4168f1284b26461700187d391cb1d8425bc7cc8a6f63290a3678975b842bf675ac7496a62933ba61c98999efd9c8115c69_0",
         "is_ignored": false,
         "lines": "    def B():\n        print(\"hey\")",
         "message": "method B is in A",
@@ -73,7 +73,7 @@
         "offset": 79
       },
       "extra": {
-        "fingerprint": "9b7016333451460075bb62f83459451d",
+        "fingerprint": "00588734ec22a6735d79374774271b3970cfd0422b903f113498893ecff42f43db6d1eb7534b8179edf058b5ffea49ac83693dccf5d52db90838144060a9b5d8_0",
         "is_ignored": false,
         "lines": "    def C():\n        print(\"yeh\")",
         "message": "method C is in A",

@@ -15,7 +15,7 @@
         "offset": 77
       },
       "extra": {
-        "fingerprint": "dcfad8dc135111165d07ebfafbf85935",
+        "fingerprint": "2cad4e673c48a29e96d0199cf5bd897e319565a95e9b61d49f95468d073e8aab78fc12ae3960ddb4d7f7ab8cdffd993c18c3c3e410901f5d4dd61784ed255487_0",
         "is_ignored": false,
         "lines": "    b = 10",
         "message": "Semgrep found a match 2\n",
@@ -56,7 +56,7 @@
         "offset": 123
       },
       "extra": {
-        "fingerprint": "8c02e7db9740d87032dd0d35dda9636b",
+        "fingerprint": "2cad4e673c48a29e96d0199cf5bd897e319565a95e9b61d49f95468d073e8aab78fc12ae3960ddb4d7f7ab8cdffd993c18c3c3e410901f5d4dd61784ed255487_1",
         "is_ignored": false,
         "lines": "    b = 10",
         "message": "Semgrep found a match 3\n",

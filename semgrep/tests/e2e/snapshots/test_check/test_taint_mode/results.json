@@ -15,7 +15,7 @@
         "offset": 162
       },
       "extra": {
-        "fingerprint": "e106f28d93a882f9ee67b6d357c5ebe2",
+        "fingerprint": "a19d3d838ef9b464c03b1f8d55b4b8fe879ab7d4667365368c62915edc002736cdc8a51b7b28ddce7b448abb664d640da15b5ba229fef4dcaab3793cc00f19c9_0",
         "is_ignored": false,
         "lines": "    sink1(b)",
         "message": "A user input source() went into a dangerous sink()",

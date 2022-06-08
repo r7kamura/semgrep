@@ -15,7 +15,7 @@
         "offset": 64
       },
       "extra": {
-        "fingerprint": "144f801ce8b5e4631abec455505a8d6d",
+        "fingerprint": "d7bc9b402af41acf1ad880980c408084618e28a97828445c8f34035aaf815fc075151e56546f440c623192d8630f5b24bcbd960c08969f45d2078186fb54de43_0",
         "fix": "WORKDIR /$WORD",
         "is_ignored": false,
         "lines": "WORKDIR usr/src/app",
@@ -66,7 +66,7 @@
         "offset": 180
       },
       "extra": {
-        "fingerprint": "0d90c489bf4a0036080454556e0dc498",
+        "fingerprint": "bf68a2a0b438f44777d598cfa5c4d72279a3086437fb0ead476a1750b811bb1d63954c6ab925adb46fda31a00ac3f6c3fc7ad5f02b794687b5a2fae90fac1c89_0",
         "fix": "WORKDIR /$WORD",
         "is_ignored": false,
         "lines": "WORKDIR ${dirpath}",

@@ -15,7 +15,7 @@
         "offset": 2591
       },
       "extra": {
-        "fingerprint": "4e4d8ddef2d5ec9493c83d83a8f0da0f",
+        "fingerprint": "1e426a682349933f22f3a7b5cc743630be5c68f81bfc3ec0960193de81bb4223895ed96de9ff7af996496ccd49e5e9e839eda57057d51c6b848797f70f19fa55_0",
         "is_ignored": false,
         "lines": "## Getting Started",
         "message": "Detected h2 Markdown header",
@@ -56,7 +56,7 @@
         "offset": 3702
       },
       "extra": {
-        "fingerprint": "12d2ab962f2f0727a6ac7087588c1438",
+        "fingerprint": "1e84563d6e088d2d4db94d25435def0ea20849db37dfacde1652bd658f6d2de59654c66071a9d71281ec4396cc9578a55723d072ad18bd0c90c1b3f6eaecc08c_0",
         "is_ignored": false,
         "lines": "## Examples",
         "message": "Detected h2 Markdown header",
@@ -97,7 +97,7 @@
         "offset": 8847
       },
       "extra": {
-        "fingerprint": "1bedda20de9ab7b81a0e7aa16cff6ae7",
+        "fingerprint": "251e8ee4c709bd4349b7eb8ec05af8962cd75ba78d7cc853a976bf233cd71c1232ef2d14644795d34fddb970edb1934385c34c6e2f083b5f857d54325d7b8401_0",
         "is_ignored": false,
         "lines": "## Resources",
         "message": "Detected h2 Markdown header",
@@ -138,7 +138,7 @@
         "offset": 9242
       },
       "extra": {
-        "fingerprint": "389fc01e76fca3537846c717edbd57f2",
+        "fingerprint": "77119d9a51cc9d39a37f46471d5a6dd2ee8e128edf684204babac1cc2e9cfff9097ae3700c14ef3e6278a357f8b3fddbabc94c1c1ed858d4cddd5f1cf2fdb1f7_0",
         "is_ignored": false,
         "lines": "## Usage",
         "message": "Detected h2 Markdown header",
@@ -179,7 +179,7 @@
         "offset": 9805
       },
       "extra": {
-        "fingerprint": "ff94e12d9057dd3aef04eadf4800e126",
+        "fingerprint": "3f9595c7fbae15470eeaf39db6064f5cac33a36e1f79d223aa7d22e24e3ce37b66e671a02be12f537227f19e1596ecd62536ee5cbc3b7e7e4ddbb838ee2ee3fa_0",
         "is_ignored": false,
         "lines": "## Contributing",
         "message": "Detected h2 Markdown header",
@@ -220,7 +220,7 @@
         "offset": 10946
       },
       "extra": {
-        "fingerprint": "54a2225fed92e974b0053a37ffaff94a",
+        "fingerprint": "ba12d6b8106a876970f583e924689a36799fec026aeca1f7da1229b967381de33908e616be13b03cc6bd8535863f84fe8ba1d111361d849151c90020ac0c3d60_0",
         "is_ignored": false,
         "lines": "## Commercial Support",
         "message": "Detected h2 Markdown header",

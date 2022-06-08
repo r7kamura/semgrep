@@ -15,7 +15,7 @@
         "offset": 151
       },
       "extra": {
-        "fingerprint": "133da75f2a725d8766223ceff876a0bd",
+        "fingerprint": "6fedd9976aa82a323af3cce194fc2a0f3865e59f8e6fedbba0d23f789cc4b921673022409413ec9f6281a7c29cff8b13bf50fdf2af4aedd3b5ad5036b2ca1bef_0",
         "fix_regex": {
           "regex": "(.*)\\)",
           "replacement": "\\1, quoting=csv.QUOTE_ALL)"
@@ -51,7 +51,7 @@
         "offset": 234
       },
       "extra": {
-        "fingerprint": "4b194ecbc37743c39a6c6739a9069daf",
+        "fingerprint": "6fedd9976aa82a323af3cce194fc2a0f3865e59f8e6fedbba0d23f789cc4b921673022409413ec9f6281a7c29cff8b13bf50fdf2af4aedd3b5ad5036b2ca1bef_0",
         "fix_regex": {
           "regex": "(.*)\\)",
           "replacement": "\\1, quoting=csv.QUOTE_ALL)"

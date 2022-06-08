@@ -17,7 +17,7 @@
         "offset": 52
       },
       "extra": {
-        "fingerprint": "10857124920c5c4572e0861aeafd337b",
+        "fingerprint": "0d547ae03b1ddaeab577b628e4a4f27b02406ba3a0f52de30e42da16794a23a936a8324030f5f8e22b6678b48e4e879738f3ae07d2e8f9b6d94e74fd63692d43_0",
         "is_ignored": false,
         "lines": "    nested_patterns_func('foo', 1)",
         "message": "test",
@@ -58,7 +58,7 @@
         "offset": 87
       },
       "extra": {
-        "fingerprint": "72e37a26a3fcf44b28375ba83a4a70af",
+        "fingerprint": "dfab545d1b7a3f5d1845bd8594e0a4857928e6798c96281cabee65ad9308aab74493ace8a3020be6fbf4db9719386b10fb82c83aedf8d3bded3dea33308c53f1_0",
         "is_ignored": false,
         "lines": "    nested_patterns_func('bar', 2)",
         "message": "test",

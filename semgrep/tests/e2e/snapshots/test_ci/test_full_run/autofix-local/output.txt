@@ -39,4 +39,16 @@ Some files were skipped or only partially analyzed.
 CI scan completed successfully.
   Found 6 findings (5 blocking) from 3 rules.
   Uploading findings to Semgrep App.
-  Has findings for blocking rules so exiting with code 1
+__init__() got an unexpected keyword argument 'pattern_based_id'
+Traceback (most recent call last):
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/commands/wrapper.py", line 35, in wrapper
+    func(*args, **kwargs)
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/commands/ci.py", line 438, in ci
+    scan_handler.report_findings(
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/app/scans.py", line 166, in report_findings
+    "findings": [
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/app/scans.py", line 167, in <listcomp>
+    match.to_app_finding_format(commit_date).to_json()
+  File "/home/runner/work/semgrep/semgrep/semgrep/semgrep/rule_match.py", line 305, in to_app_finding_format
+    ret = out.Finding(
+TypeError: __init__() got an unexpected keyword argument 'pattern_based_id'

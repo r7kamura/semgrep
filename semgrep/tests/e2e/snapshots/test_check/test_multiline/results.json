@@ -15,7 +15,7 @@
         "offset": 213
       },
       "extra": {
-        "fingerprint": "3cdffed24a426435e1924e29dc4a7818",
+        "fingerprint": "6724ffc01ee161c16fd5298f00e21a8f08565bdcacee32111cf97a42d74bdccf5003cef468e93e69aaeda3d625a26b56e23b20ea151a79622390d49d8f5612f3_0",
         "is_ignored": false,
         "lines": "        SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK\n        == SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK",
         "message": "useless comparison operation `SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK == SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK` or `SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK != SUPER_LONG_CONSTANT_TO_TRIGGER_A_LINE_BREAK`; possible bug?",

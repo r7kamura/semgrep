@@ -13,7 +13,7 @@
         "offset": 162
       },
       "extra": {
-        "fingerprint": "b4fd4cd964c1be735cfdda0da54ad19f",
+        "fingerprint": "b11d5822ff1ec2a4b2c239dc590874dc25fb68788bf43f48312e53ef3ed99a61889ee636ffdb6de56aa4bf50d1272cb2a783bc1df2466a5b09e7eea7766038e8_0",
         "is_ignored": false,
         "lines": "        <li>person_name_full is <b>{{ person_name_full }}</b></li>",
         "message": "Detected a XSS vulnerability: '$VAR' is rendered\nunsafely in '$TEMPLATE'.\n",

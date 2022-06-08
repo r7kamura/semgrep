@@ -17,7 +17,7 @@
         "offset": 52
       },
       "extra": {
-        "fingerprint": "10857124920c5c4572e0861aeafd337b",
+        "fingerprint": "2a3b5da64df6a525a5d7d02453d2b74ced75becb4eb7f1bec9a0205c4d933cff68cce0d231cc2fb45d234f2861e5cca8d0c88dd53ebbe62c3dd3382286f54b91_0",
         "is_ignored": false,
         "lines": "    nested_patterns_func('foo', 1)",
         "message": "test",
@@ -40,7 +40,7 @@
         "offset": 87
       },
       "extra": {
-        "fingerprint": "72e37a26a3fcf44b28375ba83a4a70af",
+        "fingerprint": "2a3b5da64df6a525a5d7d02453d2b74ced75becb4eb7f1bec9a0205c4d933cff68cce0d231cc2fb45d234f2861e5cca8d0c88dd53ebbe62c3dd3382286f54b91_0",
         "is_ignored": false,
         "lines": "    nested_patterns_func('bar', 2)",
         "message": "test",
@@ -63,7 +63,7 @@
         "offset": 122
       },
       "extra": {
-        "fingerprint": "767a1f087e54c907cff97a15f34992de",
+        "fingerprint": "2a3b5da64df6a525a5d7d02453d2b74ced75becb4eb7f1bec9a0205c4d933cff68cce0d231cc2fb45d234f2861e5cca8d0c88dd53ebbe62c3dd3382286f54b91_0",
         "is_ignored": false,
         "lines": "    nested_patterns_func('bar', 3)",
         "message": "test",
@@ -86,7 +86,7 @@
         "offset": 157
       },
       "extra": {
-        "fingerprint": "46cf017228276039d16a5b2fbec617f2",
+        "fingerprint": "1239d27fa87da8ba58f3a3ae3be7a0a3d1daab5da4ac80a2fc800f5a0da91cb50ae743323e3f9d13150f0028b8e6ad2318fa39de0815e0c9627faeac8a01448b_0",
         "is_ignored": false,
         "lines": "    nested_patterns_func('baz', 1)",
         "message": "test",
