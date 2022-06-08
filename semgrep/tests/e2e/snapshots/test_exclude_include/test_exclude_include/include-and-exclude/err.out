@@ -1,4 +1,3 @@
-Paths that match both --include and --exclude will be skipped by Semgrep.
 Scanning 1 file.
 
 Some files were skipped or only partially analyzed.
